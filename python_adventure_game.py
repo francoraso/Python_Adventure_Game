@@ -53,27 +53,28 @@ story_root.add_child(choice_a)
 story_root.add_child(choice_b)
 
 choice_a_1 = TreeNode("""
-After a quick look at your desktop icons, you see that you have only two games installed on your 40gb hard drive.
-Do you play:
+After returning with your snack you have a quick look at your desktop icons, you see that you have only two games installed on your 40gb hard drive.
+What game do you play:
 1)Starcraft Broodwar                      
 2)World of Warcraft                     
 """)
 
 choice_a_2 = TreeNode("""
-You boot up limewire and notice a few completed files with no file extensions.
-Do you:
-1)Reformat your hard drive and reinstall windows, you know what you did                      
-2)Ignore the files and go boot up a game, whats the worst that can happen?                     
+You only have 2 games installed.
+What game do you play:
+1)You don't like the games you have installed. You hop off your PC and go play E.T on your Atari                      
+2)Age of Empires                   
 """)
 
 choice_a.add_child(choice_a_1)
 choice_a.add_child(choice_a_2)
 
+
 choice_b_1 = TreeNode("""
 After a quick look at your desktop icons, you see that you have only two games installed on your 40gb hard drive.
 Do you play:
-1)Starcraft Broodwar                      
-2)World of Warcraft                     
+1)Warcraft 3                      
+2)Halo:Combat Evolved                     
 """)
 
 choice_b_2 = TreeNode("""
@@ -82,6 +83,39 @@ Do you:
 1)Reformat your hard drive and reinstall windows, you know what you did                      
 2)Ignore the files and go boot up a game, whats the worst that can happen?                     
 """)
+
+choice_b.add_child(choice_b_1)
+choice_b.add_child(choice_b_2)
+
+
+
+choice_a_3 = TreeNode("""
+Your first ladder game in and your house phone rings.You still have dial up and now you have more disconnects than wins.
+You decide to just switch to World of Warcraft. You login and spawn where you left off.
+Where did you spawn?
+1)The Barrens                      
+2)Stormwind                     
+""")
+
+choice_a_4 = TreeNode("""
+You enter the login Queue with 5,000 users ahead of you
+1)Reformat your hard drive and reinstall windows, you know what you did                      
+2)Ignore the files and go boot up a game, whats the worst that can happen?
+""")
+
+choice_a_1.add_child(choice_a_3)
+choice_a_2.add_child(choice_a_4)
+
+
+
+
+
+
+
+
+
+
+
 
 
 #TESTING AREA
