@@ -1,5 +1,6 @@
-#TREENODE CLASS
 
+#TREENODE CLASS
+import time
 class TreeNode:
 
     def __init__(self, story_piece):
@@ -24,11 +25,17 @@ class TreeNode:
                 story_node = chosen_child
 
 
-
+ 
 
 
 
 #VARIABLES FOR TREE
+
+
+
+
+
+
 
 
 story_root = TreeNode (""" 
@@ -104,6 +111,8 @@ Gamenight is ruined...but it could have been worse :)
 You lose. Please try again.
 """)
 
+
+
 choice_b_8 = TreeNode("""
 You double click the icon for Counter Strike Source but nothing is happening.
 All of a sudden your cd-drive starts opening and closing on its own and a message appears on your screen;
@@ -126,8 +135,8 @@ choice_b_2.add_child(choice_b_8)
 choice_b_3 = TreeNode("""
 You login to Warcraft 3 and it somehow time warps you into the future. 
 Blizzard Entertainment is not recognizable and your copy of Warcraft 3 was force updated to Warcraft 3:Reforged.
-The game is glitchy and unplayable so you turn it off. You have have some newly installed games in the future but 
-they are not on your PC..... You lift up this touch screen device in your hand that has a sim card in it and you see a game
+The game is glitchy and unplayable so you turn it off. You have have some newly installed games in the future but some 
+are not on your PC..... You lift up this touch screen device in your hand that has a sim card in it and you see a game
 title that looks familiar but it can't be....not on a phone...It can't be an april fools joke, were out of season.
 1)Risk it and open the game                     
 2)Remove the game from your phone and look for other new games. The future must have something better.                  
@@ -307,12 +316,24 @@ choice_a_2.add_child(choice_a_8)
 
 
 #TESTING AREA
-
+print
 print("It is the year 2005 and you have just finished the school/work week. Time to fire up some amazing games")
 print("What could go wrong...")
 
 user_input = input("What is your name adventurer?")
+
+
+print
+print
 print (user_input) 
-print ("let your gaming adventure begin")
+print ("Let your gaming adventure begin")
+
+time.sleep(2)
 
 story_root.traverse()
+
+
+
+
+
+
